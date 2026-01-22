@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Avege | Get in Touch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #f0fdfa 0%, #ffffff 50%, #e0f2f1 100%);
+        }
+        .contact-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(229, 231, 235, 0.5);
+        }
+        .input-field {
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+        }
+        .input-field:focus {
+            border-color: #14b8a6;
+            ring: 2px;
+            ring-color: #ccfbf1;
+            outline: none;
+        }
+        .gradient-bg {
+      background: linear-gradient(135deg, #e0f2f1 0%, #ffffff 50%, #e8f5e9 100%);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .btn-primary {
+      background-color: #4a90e2;
+      transition: transform 0.2s;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background-color: #357abd;
+    }
+
+  
+    @media (max-width: 791px) {
+      header nav {
+        display: none !important;
+      }
+    }
+    </style>
+</head>
+<body class="font-sans text-gray-800 overflow-x-hidden">
+
+    <header class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+  <div class="flex items-center gap-2">
+    <div class="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center text-white">
+      <img src="img/925mby.jpg" alt="">
+    </div>
+    <span class="text-2xl font-bold text-teal-800">Luma tech</span>
+  </div>
+
+  <!-- MOBILE MENU BUTTON -->
+  <button onclick="toggleMenu()" class="block md:hidden text-2xl text-gray-700">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- DESKTOP NAV -->
+  <nav class="hidden md:flex gap-8 text-gray-600 font-medium">
+    <a href="index.html" class="hover:text-teal-600">Home</a>
+    <a href="about.html" class="hover:text-teal-600">About</a>
+    <a href="contact.html" class="text-teal-600 border-b-2 border-teal-500">Contact</a>
+    <a href="Product.html" class="hover:text-teal-600">Product skil</a>
+  </nav>
+</header>
+<div id="mobileSidebar"
+  class="fixed inset-0 bg-black/40 z-[999] hidden"
+  onclick="toggleMenu()">
+
+  <aside
+    class="absolute top-0 right-0 h-full w-72 bg-white shadow-2xl p-6"
+    onclick="event.stopPropagation()">
+
+    <div class="flex justify-between items-center mb-8">
+      <span class="text-xl font-bold text-teal-700">Luma Tech</span>
+      <button onclick="toggleMenu()" class="text-xl text-gray-600">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <nav class="flex flex-col gap-6 text-lg font-medium text-gray-700">
+      <a href="index.html" class="hover:text-teal-600">Home</a>
+      <a href="about.html" class="hover:text-teal-600">About</a>
+      <a href="contact.html" class="hover:text-teal-600">Contact</a>
+      <a href="Product.html" class="hover:text-teal-600">Product Skill</a>
+    </nav>
+  </aside>
+</div>
+
+    <section class="gradient-bg pt-16 pb-12 px-8 text-center">
+        <div data-aos="fade-down">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">How can we help?</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                Have questions about our Supabase integration or need help managing your freelancer expenses? Our team is here to support you.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-16 px-8 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-12">
+            
+            <div class="md:col-span-1 space-y-8" data-aos="fade-right">
+                <div>
+                    <h3 class="text-sm font-bold text-teal-600 uppercase tracking-widest mb-4">Contact Details</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="text-teal-500 mt-1"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <p class="font-bold text-gray-900">Email us</p>
+                                       <p class="text-gray-500">akakamarvelous7@gmail.com</p>
+
+                                       
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="text-teal-500 mt-1"><i class="fas fa-phone"></i></div>
+                           <div>
+                                <p class="font-bold text-gray-900">Call / WhatsApp</p>
+                                <p class="text-gray-500">
+                                    <a href="https://wa.me/2348118831748" target="_blank" class="hover:text-teal-700">
+                                        +234 811 883 1748
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-bold text-teal-600 uppercase tracking-widest mb-4">Social Presence</h3>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-teal-500 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-teal-500 hover:text-white transition"><i class="fab fa-github"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-teal-500 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-2" data-aos="fade-up">
+                <form class="contact-card p-8 md:p-10 rounded-3xl shadow-xl space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-sm font-semibold text-gray-700">Full Name</label>
+                            <input type="text" placeholder="John Doe" class="input-field w-full px-4 py-3 rounded-xl bg-gray-50 focus:bg-white">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-semibold text-gray-700">Email Address</label>
+                            <input type="email" placeholder="john@example.com" class="input-field w-full px-4 py-3 rounded-xl bg-gray-50 focus:bg-white">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-sm font-semibold text-gray-700">Subject</label>
+                        <select class="input-field w-full px-4 py-3 rounded-xl bg-gray-50 focus:bg-white">
+                            <option>Technical Support</option>
+                            <option>Account Inquiry</option>
+                            <option>Feedback / Feature Request</option>
+                            <option>Partnership</option>
+                        </select>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-sm font-semibold text-gray-700">Message</label>
+                        <textarea rows="5" placeholder="How can we help your freelance journey?" class="input-field w-full px-4 py-3 rounded-xl bg-gray-50 focus:bg-white"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-teal-600 text-white font-bold py-4 rounded-xl hover:bg-teal-700 transition shadow-lg flex items-center justify-center gap-2">
+                        Send Message <i class="fas fa-paper-plane text-sm"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-200 py-10 px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+            <p>Copyright © 2024 Luma.</p>
+            <div class="flex gap-8 mt-4 md:mt-0">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-out'
+        });
+          function toggleMenu() {
+    document.getElementById('mobileSidebar').classList.toggle('hidden');
+  }
+    </script>
+</body>
+</html>
