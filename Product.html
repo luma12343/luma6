@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Expertise | Luma Tech Development</title>
+    <title>Our Expertise | Avege Development</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .gradient-bg {
-            background: linear-gradient(135deg, #e0f2f1 0%, #ffffff 50%, #e8f5e9 100%);
+            background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 50%, #f0f9ff 100%);
         }
         .skill-card {
             background: rgba(255, 255, 255, 0.6);
@@ -31,169 +31,208 @@
             filter: grayscale(0%);
             transform: scale(1.1);
         }
-        @media (max-width: 791px) {
-            header nav { display: none !important; }
-        }
+          .gradient-bg {
+      background: linear-gradient(135deg, #e0f2f1 0%, #ffffff 50%, #e8f5e9 100%);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .btn-primary {
+      background-color: #4a90e2;
+      transition: transform 0.2s;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background-color: #357abd;
+    }
+
+  
+    @media (max-width: 791px) {
+      header nav {
+        display: none !important;
+      }
+    }
     </style>
 </head>
 <body class="font-sans text-gray-800 overflow-x-hidden">
 
-<header class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+      <header class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
   <div class="flex items-center gap-2">
-    <div class="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center text-white overflow-hidden">
-      <img src="img/925mby.jpg" alt="Luma Logo">
+    <div class="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center text-white">
+      <img src="img/925mby.jpg" alt="">
     </div>
-    <span class="text-2xl font-bold text-teal-800">Luma Tech</span>
+    <span class="text-2xl font-bold text-teal-800">Luma tech</span>
   </div>
 
+  <!-- MOBILE MENU BUTTON -->
   <button onclick="toggleMenu()" class="block md:hidden text-2xl text-gray-700">
     <i class="fas fa-bars"></i>
   </button>
 
+  <!-- DESKTOP NAV -->
   <nav class="hidden md:flex gap-8 text-gray-600 font-medium">
     <a href="index.html" class="hover:text-teal-600">Home</a>
     <a href="about.html" class="hover:text-teal-600">About</a>
     <a href="contact.html" class="hover:text-teal-600">Contact</a>
-    <a href="Product.html" class="text-teal-600 border-b-2 border-teal-500">Expertise</a>
+    <a href="Product.html" class="text-teal-600 border-b-2 border-teal-500" >Product skil</a>
   </nav>
 </header>
+<div id="mobileSidebar"
+  class="fixed inset-0 bg-black/40 z-[999] hidden"
+  onclick="toggleMenu()">
 
-<div id="mobileSidebar" class="fixed inset-0 bg-black/40 z-[999] hidden" onclick="toggleMenu()">
-  <aside class="absolute top-0 right-0 h-full w-72 bg-white shadow-2xl p-6" onclick="event.stopPropagation()">
+  <aside
+    class="absolute top-0 right-0 h-full w-72 bg-white shadow-2xl p-6"
+    onclick="event.stopPropagation()">
+
     <div class="flex justify-between items-center mb-8">
       <span class="text-xl font-bold text-teal-700">Luma Tech</span>
-      <button onclick="toggleMenu()" class="text-xl text-gray-600"><i class="fas fa-times"></i></button>
+      <button onclick="toggleMenu()" class="text-xl text-gray-600">
+        <i class="fas fa-times"></i>
+      </button>
     </div>
+
     <nav class="flex flex-col gap-6 text-lg font-medium text-gray-700">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="Product.html" class="text-teal-600">Expertise</a>
-      <a href="privacy.html">Privacy Policy</a>
+      <a href="index.html" class="hover:text-teal-600">Home</a>
+      <a href="about.html" class="hover:text-teal-600">About</a>
+      <a href="contact.html" class="hover:text-teal-600">Contact</a>
+      <a href="Product.html" class="text-teal-600 border-b-2 border-teal-500">Product Skill</a>
+        <a href="privacy.html"class="hover:text-teal-600">Privacy Policy</a>
+
     </nav>
   </aside>
 </div>
 
-<section class="gradient-bg pt-20 pb-16 px-8 text-center">
-    <div data-aos="zoom-in">
-        <span class="bg-teal-100 text-teal-700 px-4 py-1 rounded-full text-sm font-bold tracking-widest uppercase">Full-Stack Solutions</span>
-        <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mt-6 mb-6">Engineering High-Performance <br><span class="text-blue-600">Digital Platforms.</span></h1>
-        <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            We specialize in building scalable web and mobile applications with integrated payment solutions and real-time backend architecture.
-        </p>
-    </div>
-</section>
+    <section class="gradient-bg pt-20 pb-16 px-8 text-center">
+        <div data-aos="zoom-in">
+            <span class="bg-teal-100 text-teal-700 px-4 py-1 rounded-full text-sm font-bold tracking-widest uppercase">Full-Stack Solutions</span>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mt-6 mb-6">We build the web, <br><span class="text-blue-600">one pixel at a time.</span></h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                From high-converting websites to scalable mobile applications. We specialize in modern tech stacks that prioritize speed, security, and user experience.
+            </p>
+        </div>
+    </section>
 
-<section class="py-24 px-8 max-w-7xl mx-auto">
-    <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
-        <div data-aos="fade-right">
-            <h2 class="text-3xl font-bold">The Luma Tech Stack</h2>
-            <p class="text-gray-500 mt-2">Modern tools for robust business solutions.</p>
+    <section class="py-24 px-8 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+            <div data-aos="fade-right">
+                <h2 class="text-3xl font-bold">Our Tech Stack</h2>
+                <p class="text-gray-500 mt-2">The tools we use to bring your ideas to life.</p>
+            </div>
+            <div class="text-gray-400 text-sm italic" data-aos="fade-left">
+                *Always evolving with the 2026 ecosystem
+            </div>
         </div>
-        <div class="text-gray-400 text-sm italic" data-aos="fade-left">
-            *Optimized for the 2026 Tech Ecosystem
-        </div>
-    </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div class="skill-card p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="100">
-            <i class="fab fa-html5 text-4xl mb-4 text-orange-500 tech-icon"></i>
-            <h3 class="font-bold text-lg">HTML5 / CSS3</h3>
-            <p class="text-xs text-gray-400 uppercase tracking-tighter mt-1">Semantic Structure</p>
-        </div>
-        <div class="skill-card p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="150">
-            <i class="fab fa-js text-4xl mb-4 text-yellow-400 tech-icon"></i>
-            <h3 class="font-bold text-lg">JavaScript / TypeScript</h3>
-            <p class="text-xs text-gray-400 uppercase tracking-tighter mt-1">Robust Logic</p>
-        </div>
-        <div class="skill-card p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="200">
-            <i class="fab fa-react text-4xl mb-4 text-cyan-400 tech-icon"></i>
-            <h3 class="font-bold text-lg">Next.js / Native</h3>
-            <p class="text-xs text-gray-400 uppercase tracking-tighter mt-1">Modern Frameworks</p>
-        </div>
-        <div class="skill-card p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="250">
-            <i class="fab fa-node-js text-4xl mb-4 text-green-500 tech-icon"></i>
-            <h3 class="font-bold text-lg">Node.js</h3>
-            <p class="text-xs text-gray-400 uppercase tracking-tighter mt-1">Backend Runtime</p>
-        </div>
-        <div class="skill-card p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="300">
-            <i class="fas fa-database text-4xl mb-4 text-purple-500 tech-icon"></i>
-            <h3 class="font-bold text-lg">PostgreSQL</h3>
-            <p class="text-xs text-gray-400 uppercase tracking-tighter mt-1">Relational Data</p>
-        </div>
-        <div class="skill-card p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="350">
-            <i class="fas fa-cloud text-4xl mb-4 text-blue-400 tech-icon"></i>
-            <h3 class="font-bold text-lg">Supabase / Firebase</h3>
-            <p class="text-xs text-gray-400 uppercase tracking-tighter mt-1">Serverless Scaling</p>
-        </div>
-        <div class="skill-card p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="400">
-            <i class="fas fa-credit-card text-4xl mb-4 text-teal-500 tech-icon"></i>
-            <h3 class="font-bold text-lg">Payment APIs</h3>
-            <p class="text-xs text-gray-400 uppercase tracking-tighter mt-1">Monnify & Stripe</p>
-        </div>
-        <div class="skill-card p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="450">
-            <i class="fas fa-shield-alt text-4xl mb-4 text-red-500 tech-icon"></i>
-            <h3 class="font-bold text-lg">Auth & Security</h3>
-            <p class="text-xs text-gray-400 uppercase tracking-tighter mt-1">Data Protection</p>
-        </div>
-    </div>
-</section>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="skill-card p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="100">
+                <i class="fab fa-html5 text-4xl mb-4 text-orange-500 tech-icon"></i>
+                <h3 class="font-bold text-lg">HTML5</h3>
+                <p class="text-xs text-gray-400 uppercase tracking-tighter mt-1">Semantic Structure</p>
+            </div>
 
-<section class="bg-gray-900 py-24 px-8 text-white">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-        <div data-aos="fade-right">
-            <h2 class="text-4xl font-bold mb-8">What We Deliver</h2>
-            <div class="space-y-6">
-                <div class="flex gap-4">
-                    <div class="w-12 h-12 bg-teal-500/20 rounded-xl flex items-center justify-center text-teal-400">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-lg">Cross-Platform Apps</h4>
-                        <p class="text-gray-400">Seamless iOS and Android experiences built with React Native.</p>
-                    </div>
+            <div class="skill-card p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="150">
+                <i class="fab fa-css3-alt text-4xl mb-4 text-blue-500 tech-icon"></i>
+                <h3 class="font-bold text-lg">CSS3 / Tailwind</h3>
+                <p class="text-xs text-gray-400 uppercase tracking-tighter mt-1">Modern Styling</p>
+            </div>
+
+            <div class="skill-card p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="200">
+                <i class="fab fa-js text-4xl mb-4 text-yellow-400 tech-icon"></i>
+                <h3 class="font-bold text-lg">JavaScript</h3>
+                <p class="text-xs text-gray-400 uppercase tracking-tighter mt-1">Dynamic Logic</p>
+            </div>
+
+            <div class="skill-card p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="250">
+                <i class="fab fa-react text-4xl mb-4 text-cyan-400 tech-icon"></i>
+                <h3 class="font-bold text-lg">React / Native</h3>
+                <p class="text-xs text-gray-400 uppercase tracking-tighter mt-1">App Frameworks</p>
+            </div>
+
+            <div class="skill-card p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="300">
+                <i class="fab fa-node-js text-4xl mb-4 text-green-500 tech-icon"></i>
+                <h3 class="font-bold text-lg">Node.js</h3>
+                <p class="text-xs text-gray-400 uppercase tracking-tighter mt-1">Server Runtime</p>
+            </div>
+
+            <div class="skill-card p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="350">
+                <div class="flex justify-center mb-4">
+                    <i class="fas fa-leaf text-4xl text-green-600 tech-icon"></i>
                 </div>
-                <div class="flex gap-4">
-                    <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center text-blue-400">
-                        <i class="fas fa-money-check-alt"></i>
+                <h3 class="font-bold text-lg">MongoDB</h3>
+                <p class="text-xs text-gray-400 uppercase tracking-tighter mt-1">NoSQL Database</p>
+            </div>
+
+            <div class="skill-card p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-database text-4xl mb-4 text-purple-500 tech-icon"></i>
+                <h3 class="font-bold text-lg">PostgreSQL</h3>
+                <p class="text-xs text-gray-400 uppercase tracking-tighter mt-1">Relational Data</p>
+            </div>
+
+            <div class="skill-card p-8 rounded-3xl text-center" data-aos="fade-up" data-aos-delay="450">
+                <i class="fas fa-cloud text-4xl mb-4 text-blue-400 tech-icon"></i>
+                <h3 class="font-bold text-lg">Supabase / AWS</h3>
+                <p class="text-xs text-gray-400 uppercase tracking-tighter mt-1">Backend as Service</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-900 py-24 px-8 text-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-4xl font-bold mb-8">What we actually deliver</h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-teal-500/20 rounded-xl flex items-center justify-center text-teal-400">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Custom Mobile Apps</h4>
+                            <p class="text-gray-400">iOS and Android apps that feel native and run butter-smooth.</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-lg">Fintech Integration</h4>
-                        <p class="text-gray-400">Secure wallet systems and automated payment gateway deployments.</p>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center text-blue-400">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Enterprise Websites</h4>
+                            <p class="text-gray-400">High-performance web applications built for scale and SEO.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="relative" data-aos="fade-left">
-            <div class="bg-gradient-to-br from-teal-500 to-blue-600 p-1 rounded-[2.5rem]">
-                <div class="bg-gray-900 rounded-[2.4rem] p-8">
-                    <pre class="text-teal-400 text-sm font-mono leading-relaxed">
-<code><span class="text-purple-400">const</span> lumaProject = {
-  client: <span class="text-yellow-300">"Business Enterprise"</span>,
-  stack: [<span class="text-yellow-300">"Next.js"</span>, <span class="text-yellow-300">"Node"</span>, <span class="text-yellow-300">"Monnify"</span>],
-  performance: <span class="text-yellow-300">"A+"</span>,
-  security: <span class="text-yellow-300">"End-to-End"</span>
+            <div class="relative" data-aos="fade-left">
+                <div class="bg-gradient-to-br from-teal-500 to-blue-600 p-1 rounded-[2.5rem]">
+                    <div class="bg-gray-900 rounded-[2.4rem] p-8">
+                        <pre class="text-teal-400 text-sm font-mono leading-relaxed">
+<code><span class="text-purple-400">const</span> project = {
+  client: <span class="text-yellow-300">"Avege Freelancers"</span>,
+  stack: [<span class="text-yellow-300">"React"</span>, <span class="text-yellow-300">"Node"</span>, <span class="text-yellow-300">"Postgres"</span>],
+  performance: <span class="text-yellow-300">"99/100"</span>,
+  status: <span class="text-yellow-300">"Operational"</span>
 };
 
 <span class="text-gray-500">// Deploying your vision...</span>
-await deployLumaService(lumaProject);</code></pre>
+await deploy(project);</code></pre>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer class="py-10 px-8 text-center text-gray-500 text-sm border-t border-gray-100">
-    <p>Copyright © 2026 Luma Tech Development. All Rights Reserved.</p>
-</footer>
+    <footer class="py-10 px-8 text-center text-gray-500 text-sm">
+        <p>Copyright © 2026 Luma Development. All Rights Reserved.</p>
+    </footer>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({ duration: 1000, once: true });
-    function toggleMenu() {
-        document.getElementById('mobileSidebar').classList.toggle('hidden');
-    }
-</script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+         function toggleMenu() {
+    document.getElementById('mobileSidebar').classList.toggle('hidden');
+  }
+    </script>
 </body>
 </html>
-
