@@ -3,170 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Avege | Our Story</title>
+    <title>About Luma Tech | Our Mission</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .gradient-bg {
-            background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 50%, #e0f2f1 100%);
+            background: linear-gradient(135deg, #e0f2f1 0%, #ffffff 50%, #e8f5e9 100%);
         }
         .glass-card {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
-        .profile-ring {
-            border: 4px solid #4fd1c5;
-            padding: 4px;
+        @media (max-width: 791px) {
+            header nav { display: none !important; }
         }
-             .gradient-bg {
-      background: linear-gradient(135deg, #e0f2f1 0%, #ffffff 50%, #e8f5e9 100%);
-    }
-    .glass-card {
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-    }
-    .btn-primary {
-      background-color: #4a90e2;
-      transition: transform 0.2s;
-    }
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      background-color: #357abd;
-    }
-
-  
-    @media (max-width: 791px) {
-      header nav {
-        display: none !important;
-      }
-    }
     </style>
 </head>
 <body class="font-sans text-gray-800 overflow-x-hidden">
 
-    <header class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<header class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
   <div class="flex items-center gap-2">
-    <div class="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center text-white">
-      <img src="img/925mby.jpg" alt="">
+    <div class="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center text-white overflow-hidden">
+      <img src="img/925mby.jpg" alt="Luma Logo">
     </div>
-    <span class="text-2xl font-bold text-teal-800">Luma tech</span>
+    <span class="text-2xl font-bold text-teal-800">Luma Tech</span>
   </div>
 
-  <!-- MOBILE MENU BUTTON -->
   <button onclick="toggleMenu()" class="block md:hidden text-2xl text-gray-700">
     <i class="fas fa-bars"></i>
   </button>
 
-  <!-- DESKTOP NAV -->
   <nav class="hidden md:flex gap-8 text-gray-600 font-medium">
     <a href="index.html" class="hover:text-teal-600">Home</a>
     <a href="about.html" class="text-teal-600 border-b-2 border-teal-500">About</a>
     <a href="contact.html" class="hover:text-teal-600">Contact</a>
-    <a href="Product.html" class="hover:text-teal-600">Product skil</a>
+    <a href="Product.html" class="hover:text-teal-600">Portfolio</a>
   </nav>
 </header>
-<div id="mobileSidebar"
-  class="fixed inset-0 bg-black/40 z-[999] hidden"
-  onclick="toggleMenu()">
 
-  <aside
-    class="absolute top-0 right-0 h-full w-72 bg-white shadow-2xl p-6"
-    onclick="event.stopPropagation()">
-
+<div id="mobileSidebar" class="fixed inset-0 bg-black/40 z-[999] hidden" onclick="toggleMenu()">
+  <aside class="absolute top-0 right-0 h-full w-72 bg-white shadow-2xl p-6" onclick="event.stopPropagation()">
     <div class="flex justify-between items-center mb-8">
       <span class="text-xl font-bold text-teal-700">Luma Tech</span>
-      <button onclick="toggleMenu()" class="text-xl text-gray-600">
-        <i class="fas fa-times"></i>
-      </button>
+      <button onclick="toggleMenu()" class="text-xl text-gray-600"><i class="fas fa-times"></i></button>
     </div>
-
     <nav class="flex flex-col gap-6 text-lg font-medium text-gray-700">
-      <a href="index.html" class="hover:text-teal-600">Home</a>
-      <a href="about.html" class="text-teal-600 border-b-2 border-teal-500">About</a>
-      <a href="contact.html" class="hover:text-teal-600">Contact</a>
-      <a href="Product.html" class="hover:text-teal-600">Product Skill</a>
-        <a href="privacy.html" class="hover:text-teal-600">Privacy Policy</a>
-
+      <a href="index.html">Home</a>
+      <a href="about.html" class="text-teal-600">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="Product.html">Portfolio</a>
+      <a href="privacy.html">Privacy Policy</a>
     </nav>
   </aside>
 </div>
 
+<section class="gradient-bg pt-20 pb-24 px-8">
+    <div class="max-w-7xl mx-auto">
+        <h1 class="text-5xl font-extrabold text-gray-900 mb-6" data-aos="fade-right">
+            Innovation in <span class="text-teal-600">Software Engineering</span>
+        </h1>
+        <p class="text-xl text-gray-600 leading-relaxed max-w-3xl" data-aos="fade-up">
+            Luma Tech is a specialized technology agency dedicated to building high-performance digital platforms. From secure financial wallets to real-time communication systems, we deliver end-to-end solutions for the modern web.
+        </p>
+    </div>
+</section>
 
-    <section class="gradient-bg pt-20 pb-24 px-8">
-       <h1 class="text-5xl font-extrabold text-gray-900 mb-6">
-  Independently built <span class="text-teal-600">full-stack platform</span>
-</h1>
-<p class="text-xl text-gray-600 leading-relaxed">
-  This product is a full-stack real-time communication and wallet platform,
-  designed and implemented end-to-end by a solo founder.
-  It is offered as a full source-code and intellectual property acquisition.
-</p>
-
-    </section>
-
-    <section class="py-20 px-8 max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
-            <div data-aos="fade-right">
-                <h2 class="text-3xl font-bold mb-6">Product Overview</h2>
-<p class="text-gray-600 mb-4">
-  The platform provides real-time messaging, group communication,
-  read receipts, wallet management, and peer-to-peer transaction logic,
-  designed for modern scalable applications.
-</p>
-<p class="text-gray-600 mb-8">
-  The system was built independently with a focus on clean architecture,
-  performance, and extensibility. The sale includes full source code,
-  documentation, and intellectual property rights.
-  No hosting or live infrastructure is included.
-</p>
-<p class="text-gray-600 mt-4">
-  Core technologies include React Native for mobile development,
-  Node.js and Express for backend services,
-  MongoDB for data storage,
-  and Socket.IO for real-time communication.
-</p>
-
+<section class="py-20 px-8 max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div data-aos="fade-right">
+            <h2 class="text-3xl font-bold mb-6 text-teal-800">Our Expertise</h2>
+            <p class="text-gray-600 mb-4">
+                At Luma Tech, we bridge the gap between complex backend architecture and intuitive user interfaces. We specialize in **React Native**, **Node.js**, and **Cloud Infrastructure**, ensuring that every product we build is scalable and secure.
+            </p>
+            <p class="text-gray-600 mb-8">
+                Our focus is on **Fintech solutions**, wallet management, and peer-to-peer transaction logic. We help businesses integrate seamless payment flows and real-time data synchronization using industry-standard tools like PostgreSQL, Supabase, and Socket.IO.
+            </p>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="p-4 border border-teal-100 rounded-lg">
+                    <p class="font-bold text-teal-700">750+</p>
+                    <p class="text-xs text-gray-500 uppercase">Users Supported</p>
                 </div>
-            </div>
-            <div class="relative" data-aos="fade-left">
-                <div class="w-full h-80 bg-teal-100 rounded-3xl overflow-hidden shadow-2xl relative">
-                    <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800" class="w-full h-full object-cover opacity-80" alt="Office Space">
-                    <div class="absolute inset-0 bg-gradient-to-t from-teal-900/40 to-transparent"></div>
-                </div>
-                <div class="absolute -bottom-6 -left-6 glass-card p-4 rounded-xl shadow-xl hidden md:block" data-aos="fade-up" data-aos-delay="400">
-                    <p class="text-xs font-bold text-teal-700">Database Status</p>
-                    <p class="text-sm">PostgreSQL Connected</p>
+                <div class="p-4 border border-teal-100 rounded-lg">
+                    <p class="font-bold text-teal-700">100%</p>
+                    <p class="text-xs text-gray-500 uppercase">Code Quality</p>
                 </div>
             </div>
         </div>
-    </section>
-
-   
-
-    <footer class="border-t border-gray-200 py-10 px-8">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-            <p>Copyright © 2026 Luma.</p>
-            <div class="flex gap-8 mt-4 md:mt-0">
-                <a href="https://www.freeprivacypolicy.com/live/31cf164e-8870-4191-bfa1-9bcd9a514ff0" target="_blank">Privacy Policy</a>
-                    <a href="https://www.termsfeed.com/live/33be9d2a-5123-4721-9a2a-6890fa20bdd8" target="_blank">Terms & Conditions</a>
-
+        <div class="relative" data-aos="fade-left">
+            <div class="w-full h-80 bg-teal-100 rounded-3xl overflow-hidden shadow-2xl relative">
+                <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800" class="w-full h-full object-cover opacity-80" alt="Tech Office">
+                <div class="absolute inset-0 bg-gradient-to-t from-teal-900/40 to-transparent"></div>
+            </div>
+            <div class="absolute -bottom-6 -left-6 glass-card p-6 rounded-xl shadow-xl hidden md:block" data-aos="fade-up" data-aos-delay="400">
+                <p class="text-xs font-bold text-teal-700 uppercase">Primary Stack</p>
+                <p class="text-sm font-semibold">Node.js | React Native | PostgreSQL</p>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true,
-            easing: 'ease-out-quad'
-        });
-         function toggleMenu() {
-    document.getElementById('mobileSidebar').classList.toggle('hidden');
-  }
-    </script>
+<footer class="border-t border-gray-200 py-10 px-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+        <p>Copyright © 2026 Luma Tech. All Rights Reserved.</p>
+        <div class="flex gap-6 mt-4 md:mt-0 items-center">
+            <a href="https://x.com/Lumatech12" target="_blank" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/akaka-marvelous-694a17290" target="_blank" class="hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/lumatechworld" target="_blank" class="hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@lumatech1" target="_blank" class="hover:text-black"><i class="fab fa-tiktok"></i></a>
+            <span class="mx-2">|</span>
+            <a href="privacy.html" class="hover:text-teal-600">Privacy Policy</a>
+            <a href="terms.html" class="hover:text-teal-600">Terms & Conditions</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 800, once: true, easing: 'ease-out' });
+    function toggleMenu() {
+        document.getElementById('mobileSidebar').classList.toggle('hidden');
+    }
+</script>
 </body>
 </html>
