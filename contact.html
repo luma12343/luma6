@@ -34,7 +34,7 @@
 
 <header class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
   <div class="flex items-center gap-2">
-    <div class="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center text-white overflow-hidden">
+    <div class="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center text-white overflow-hidden border border-teal-100">
       <img src="img/925mby.jpg" alt="Luma Logo">
     </div>
     <span class="text-2xl font-bold text-teal-800">Luma Tech</span>
@@ -101,8 +101,13 @@
             </div>
 
             <div>
-                <h3 class="text-sm font-bold text-teal-600 uppercase tracking-widest mb-4">Office Hours</h3>
-                <p class="text-gray-500">Monday - Friday: 9am - 6pm (WAT)</p>
+                <h3 class="text-sm font-bold text-teal-600 uppercase tracking-widest mb-4">Social Presence</h3>
+                <div class="flex gap-4 text-xl">
+                    <a href="https://x.com/Lumatech12" target="_blank" class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-600 hover:bg-blue-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/akaka-marvelous-694a17290" target="_blank" class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-600 hover:bg-blue-700 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/lumatechworld" target="_blank" class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-600 hover:bg-pink-600 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@lumatech1" target="_blank" class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-600 hover:bg-black hover:text-white transition"><i class="fab fa-tiktok"></i></a>
+                </div>
             </div>
         </div>
 
@@ -111,16 +116,16 @@
                 <div class="grid md:grid-cols-2 gap-6">
                     <div class="space-y-2">
                         <label class="text-sm font-semibold text-gray-700">Full Name</label>
-                        <input type="text" placeholder="John Doe" class="input-field w-full px-4 py-3 rounded-xl bg-gray-50 focus:bg-white">
+                        <input type="text" placeholder="John Doe" class="input-field w-full px-4 py-3 rounded-xl bg-gray-50 focus:bg-white border">
                     </div>
                     <div class="space-y-2">
                         <label class="text-sm font-semibold text-gray-700">Email Address</label>
-                        <input type="email" placeholder="john@example.com" class="input-field w-full px-4 py-3 rounded-xl bg-gray-50 focus:bg-white">
+                        <input type="email" placeholder="john@example.com" class="input-field w-full px-4 py-3 rounded-xl bg-gray-50 focus:bg-white border">
                     </div>
                 </div>
                 <div class="space-y-2">
                     <label class="text-sm font-semibold text-gray-700">What are you looking for?</label>
-                    <select class="input-field w-full px-4 py-3 rounded-xl bg-gray-50 focus:bg-white">
+                    <select class="input-field w-full px-4 py-3 rounded-xl bg-gray-50 focus:bg-white border">
                         <option>Custom Software Development</option>
                         <option>Fintech/Payment Integration</option>
                         <option>Web & Mobile App Design</option>
@@ -129,7 +134,7 @@
                 </div>
                 <div class="space-y-2">
                     <label class="text-sm font-semibold text-gray-700">Project Details</label>
-                    <textarea rows="5" placeholder="Tell us about your business needs..." class="input-field w-full px-4 py-3 rounded-xl bg-gray-50 focus:bg-white"></textarea>
+                    <textarea rows="5" placeholder="Tell us about your business needs..." class="input-field w-full px-4 py-3 rounded-xl bg-gray-50 focus:bg-white border"></textarea>
                 </div>
                 <button type="submit" class="w-full bg-teal-600 text-white font-bold py-4 rounded-xl hover:bg-teal-700 transition shadow-lg flex items-center justify-center gap-2">
                     Send Inquiry <i class="fas fa-paper-plane text-sm"></i>
@@ -142,9 +147,14 @@
 <footer class="border-t border-gray-200 py-10 px-8">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
         <p>Copyright © 2026 Luma Tech. All Rights Reserved.</p>
-        <div class="flex gap-8 mt-4 md:mt-0">
-            <a href="privacy.html" class="hover:text-teal-600">Privacy Policy</a>
-            <a href="terms.html" class="hover:text-teal-600">Terms & Conditions</a>
+        <div class="flex gap-6 mt-4 md:mt-0 items-center">
+            <a href="https://x.com/Lumatech12" target="_blank" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/akaka-marvelous-694a17290" target="_blank" class="hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/lumatechworld" target="_blank" class="hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@lumatech1" target="_blank" class="hover:text-black"><i class="fab fa-tiktok"></i></a>
+            <span class="mx-2">|</span>
+            <a href="privacy.html" class="hover:text-teal-600">Privacy</a>
+            <a href="terms.html" class="hover:text-teal-600">Terms</a>
         </div>
     </div>
 </footer>
@@ -158,4 +168,3 @@
 </script>
 </body>
 </html>
-
