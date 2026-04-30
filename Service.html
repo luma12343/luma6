@@ -16,21 +16,81 @@
   background: rgba(255,255,255,0.85);
   backdrop-filter: blur(10px);
 }
+
+/* ===== SIDEBAR (ADDED ONLY) ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  background: white;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  border-radius: 8px;
+  color: #333;
+}
+
+.sidebar a:hover {
+  background: #e6fffa;
+  color: #0d9488;
+}
+
+/* overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  z-index: 999;
+}
+.overlay.active {
+  display: block;
+}
 </style>
 </head>
 
 <body class="font-sans text-gray-800">
 
-<!-- HEADER -->
+<!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+
+<!-- SIDEBAR -->
+<div class="sidebar" id="sidebar">
+  <h2 class="text-xl font-bold text-teal-700 mb-4">Lumatech</h2>
+
+  <a href="index.html">Home</a>
+  <a href="Service.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+
+</div>
+
+<!-- HEADER (ONLY ADD BUTTON) -->
 <header class="flex justify-between items-center px-6 py-5 max-w-7xl mx-auto">
-  <h1 class="text-2xl font-bold text-teal-700">Lumatech</h1>
+
+  <div class="flex items-center gap-3">
+    <button id="openSidebar" class="text-xl md:hidden">
+      <i class="fas fa-bars"></i>
+    </button>
+    <h1 class="text-2xl font-bold text-teal-700">Lumatech</h1>
+  </div>
 
   <nav class="hidden md:flex gap-6 text-gray-600">
     <a href="index.html">Home</a>
     <a href="Service.html" class="text-teal-600">Services</a>
-    <a href="transactions.html">Transactions</a>
- <a href="contact.html" class="hover:text-teal-600">Contact</a>
-   
+    <a href="contact.html" class="hover:text-teal-600">Contact</a>
   </nav>
 </header>
 
@@ -128,7 +188,24 @@
             <a href="contact.html" class="hover:text-teal-600">Contact Us</a>
         </div>
     </div>
-</footer>>
+</footer>
+
+<!-- SCRIPT (ADDED ONLY) -->
+<script>
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
+const openBtn = document.getElementById("openSidebar");
+
+openBtn.addEventListener("click", () => {
+  sidebar.classList.add("active");
+  overlay.classList.add("active");
+});
+
+overlay.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+  overlay.classList.remove("active");
+});
+</script>
 
 </body>
 </html>
